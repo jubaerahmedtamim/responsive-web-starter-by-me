@@ -1,0 +1,103 @@
+/* shared styles */
+body{
+    margin: 0;
+    background-color: #D4D4D8;
+}
+main{
+    /* border: 2px solid salmon; */
+    margin: 100px 40px;
+    background-color: #FAFAF9;
+    padding: 100px 40px;
+}
+
+/* body style */
+.review{
+    display: flex;
+    align-items: center;
+}
+
+.reviwer{
+    width: 50%;
+
+}
+.reviwer > ul{
+    padding: 0;
+}
+
+.reviwer > ul > li {
+    list-style: none;
+    padding:0px 30px;
+    background-image: url('/images/Done_ring_round_fill.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.review-tile{
+    font-size: 2.25rem;
+}
+.review-description{
+    font-size: 1.25rem;
+}
+
+.rating{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.google-rating, .meta-rating{
+    height: 150px;
+    width: 350px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 20px;
+}
+.icon-star{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.icon-star> img, .icon-star> img{
+    width: 25%;
+}
+
+
+.rating-user, .rating-description{
+    font-size: 1rem;
+}
+
+.google-rating{
+    margin-left: 300px;
+}
+
+
+/* responsiveness for mobile devices */
+
+@media screen and (max-width: 576px) {
+    .review{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }  
+    main{
+        /* border: 2px solid salmon; */
+        margin:0px;
+        background-color: #FAFAF9;
+        padding: 20px;
+    }      
+    .reviwer{
+        width: 100%;
+    
+    }    
+    .google-rating, .meta-rating{
+        height: 100%;
+        width: 100%;
+        background-color: #FFFFFF;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .google-rating{
+        margin-left: 0px;
+    }
+    
+}
